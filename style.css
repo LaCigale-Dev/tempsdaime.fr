@@ -9,6 +9,7 @@ body {
   padding: 0;
   background-color: blanchedalmond;
   scroll-behavior: smooth;
+  margin-bottom: 30px;
 }
 
 nav {
@@ -40,7 +41,7 @@ h1 {
   text-align: center;
   text-transform: capitalize;
   margin-top: 50px;
-  text-decoration: overline solid 1px black;
+  text-decoration: overline solid 1px #589f66;
   color: #3a4643;
 }
 
@@ -62,13 +63,14 @@ p {
 
 .network {
   font-size: 100px;
-  display: inline-block;
   color: #3a4643;
   padding: 20px 45px;
   border: #3a4643 1px solid;
   margin-bottom: 10%;
   border-radius: 25px;
   box-shadow: 5px 5px 5px 0px gray;
+  
+  
 
 }
 
@@ -85,11 +87,10 @@ section {
 
 img {
   width: 500px;
-  margin: 25px;
+  display: inline-block;
   border-radius: 1%;
   margin-top: 110px;
   box-shadow: 5px 5px 5px 0px gray;
-  display: inline-block;
 }
 
 img:hover {
@@ -110,7 +111,8 @@ img:hover {
 
 /* contact.html */
 .contact {
-  margin-top: 110px;
+  margin-top: 60px;
+  font-size: 25px;
   color: #3a4643;
 }
 
@@ -120,8 +122,8 @@ img:hover {
   color: #3a4643;
   padding: 20px 45px;
   border: #3a4643 1px solid;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 0px;
+  margin-bottom: -25px;
   border-radius: 25px;
   box-shadow: 5px 5px 5px 0px gray;
 }
@@ -196,12 +198,20 @@ iframe {
     margin-left: 40px;
     margin-top: 25px;
     box-shadow: 5px 5px 5px 0px #589f66 !important;
+    filter: none;
   }
 
   p {
-    font-size: 30px;
+    font-size: 35px;
     padding: 10px 10px;
     margin-top: 25px;
+  }
+
+  .contact {
+    margin-top: 40px;
+    margin-bottom: -40px;
+    font-size: 12px;
+    color: #3a4643;
   }
 
   iframe {
