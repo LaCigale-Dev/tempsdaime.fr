@@ -1,9 +1,8 @@
-/*index.html*/
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
+/*index.html*/
 body {
   margin: 0;
   padding: 0;
@@ -96,8 +95,9 @@ img {
 img:hover {
   box-shadow: 5px 5px 5px 0px #589f66;
 }
+/*index.html*/
 
-/* Flou */
+/* Flou image*/
 img {
   -webkit-filter: blur(3px);
   filter: blur(3px);
@@ -108,6 +108,7 @@ img:hover {
   -webkit-filter: blur(0);
   filter: blur(0);
 }
+/* Flou image*/
 
 /* contact.html */
 .contact {
@@ -158,6 +159,16 @@ iframe {
   
   
 }
+/* contact.html */
+
+/*tarifs.html*/
+
+
+
+
+
+
+/*responsive*/
 
 @media screen and (max-width: 1200px) {
   h1 {
@@ -209,6 +220,8 @@ iframe {
 
   img {
     width: 300px;
+    box-shadow: 5px 5px 5px 0px #589f66 !important;
+    filter: none;
   }
   p {
     font-size: 40px;
@@ -261,12 +274,12 @@ iframe {
   .network {
     
     font-size: 2em;
-    margin-left: 25px;
+    margin-left: 30px;
     background-color: #3a4643;
     color: #589f66;
   }
   .tel{
-    margin-left: 25px;
+    margin-left: 30px;
     font-size: 2em;
     background-color: #3a4643;
     color: #589f66;
@@ -278,19 +291,21 @@ iframe {
   }
 
   .footer{
-    font-size: 6px;
+    font-size: 8px;
     font-family: "Montserrat";
     display: inline-flex;
-    margin-top: 180px;
+    margin-top: 80px;
+    color: black;
     
     
   }
   
   .footer2{
-    font-size: 6px;
+    font-size: 8px;
     font-family: "Montserrat";
     display: inline-flex;
     margin-top: 0px;
+    color: black;
     
     
   }
