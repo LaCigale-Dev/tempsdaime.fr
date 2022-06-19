@@ -3,12 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
 /*index.html*/
+
 body {
   margin: 0;
   padding: 0;
   background-color: blanchedalmond;
   scroll-behavior: smooth;
-  margin-bottom: 30px;
 }
 
 nav {
@@ -65,18 +65,16 @@ p {
   color: #3a4643;
   padding: 20px 45px;
   border: #3a4643 1px solid;
-  margin-bottom: 10%;
   border-radius: 25px;
   box-shadow: 5px 5px 5px 0px gray;
-  
-  
-
-}
+ }
 
 .network:hover {
   background-color: #3a4643;
   color: #589f66;
 }
+
+
 
 /*pour centrer images = section=text align + img=display inline block*/
 section {
@@ -110,7 +108,7 @@ img:hover {
 }
 /* Flou image*/
 
-/* contact.html */
+/*CONTACT.HTML*/
 .contact {
   margin-top: 60px;
   font-size: 25px;
@@ -124,9 +122,9 @@ img:hover {
   padding: 20px 45px;
   border: #3a4643 1px solid;
   margin-top: 0px;
-  margin-bottom: -25px;
   border-radius: 25px;
   box-shadow: 5px 5px 5px 0px gray;
+  margin-bottom: 90px;
 }
 
 .tel:hover {
@@ -142,33 +140,115 @@ iframe {
   box-shadow: 5px 5px 5px 0px gray;
 }
 
-.footer{
+.pheure{
+  margin-top: 100px;
+  text-decoration: underline 1px #3a4643;
+}
+
+.sheure{
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: "Montserrat";
+  color: #589f66;
+}
+
+.footer {
   font-size: 15px;
   font-family: "Montserrat";
-  display: inline-flex;
-  margin-top: 180px;
-  
+  margin-top: 20px;
+  color: white;
+
+}
+
+.footer2 {
+  font-size: 15px;
+  font-family: "Montserrat";
+  margin-top: 20px;
+  color: white;
+}
+/*CONTACT.HTML*/
+
+/*TARIFS.HTML*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+  margin-left: 150px;
+  border: 1px solid black;
+}
+
+.card {
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: max-content 200px 1fr;
+}
+
+.card img {
+  width: 500px;
+  border-radius: 1%;
+  margin-top: 10px;
+  filter: none;
+  box-shadow: 5px 5px 5px 0px gray;
+}
+
+img:hover {
+  box-shadow: 5px 5px 5px 0px #589f66;
+}
+
+.h2card {
+  font-weight: lighter;
+  margin-bottom: 10px;
+  font-family: "Sacramento";
+  font-size: 55px;
+  margin-top: 150px;
+  color: #3a4643;
+  font-style:italic;
+  text-decoration: underline 1px   #3a4643;
+}
+
+.h3card {
+  font-weight: lighter;
+  font-family: "Sacramento";
+  font-size: 35px;
+  margin-top: 10px;
+  color: #3a4643;
+}
+
+.pcard {
+  font-family: "Montserrat";
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+
+.pheure{
+  font-size: 50px;
+  margin-top: 50px;
+  text-decoration: underline 1px #3a4643;
+}
+
+.sheure{
+ 
+  font-size: 30px;
+  font-family: Montserrat;
+  color: #589f66;
   
 }
 
-.footer2{
-  font-size: 15px;
-  font-family: "Montserrat";
-  display: inline-flex;
-  margin-top: 0px;
-  
-  
+.div_footer{
+  margin-top: 50px;
+  background-color: #3a4643;
+  margin-bottom: -20px;
+
 }
-/* contact.html */
-
-/*tarifs.html*/
-
+  /*TARIFS.HTML*
+  
 
 
 
 
 
-/*responsive*/
+/*RESPONSIVE*/
 
 @media screen and (max-width: 1200px) {
   h1 {
@@ -186,26 +266,31 @@ iframe {
     width: 800px;
   }
 
-  .footer{
+  .footer {
     font-size: 10px;
     font-family: "Montserrat";
     display: inline-flex;
     margin-top: 180px;
-    
-    
   }
-  
-  .footer2{
+
+  .footer2 {
     font-size: 10px;
     font-family: "Montserrat";
     display: inline-flex;
     margin-top: 0px;
-    
-    
   }
+
+  .div_footer{
+    margin-top: 50px;
+    background-color: #3a4643;
     
 
+  }
 }
+
+/*RESPONSIVE*/
+
+/*RESPONSIVE*/
 
 @media screen and (max-width: 750px) {
   h1 {
@@ -223,6 +308,11 @@ iframe {
     box-shadow: 5px 5px 5px 0px #589f66 !important;
     filter: none;
   }
+
+  .card img {
+    width: 300px;
+  }
+
   p {
     font-size: 40px;
   }
@@ -232,8 +322,16 @@ iframe {
     width: 400px;
   }
 
+  .div_footer{
+    margin-top: 50px;
+    background-color: #3a4643;
 
+  }
 }
+
+/*RESPONSIVE*/
+
+/*RESPONSIVE*/
 
 @media screen and (max-width: 390px) {
   nav {
@@ -246,11 +344,17 @@ iframe {
     margin-top: 50px;
   }
 
-  img  {
+  img {
     width: 250px;
     margin-left: 30px;
     margin-top: 25px;
     box-shadow: 5px 5px 5px 0px #589f66 !important;
+    filter: none;
+  }
+
+  .card img {
+    width: 250px;
+    margin-right: 20px;
     filter: none;
   }
 
@@ -272,13 +376,12 @@ iframe {
     width: 300px;
   }
   .network {
-    
     font-size: 2em;
     margin-left: 30px;
     background-color: #3a4643;
     color: #589f66;
   }
-  .tel{
+  .tel {
     margin-left: 30px;
     font-size: 2em;
     background-color: #3a4643;
@@ -290,25 +393,71 @@ iframe {
     margin-top: 15px;
   }
 
-  .footer{
+  .footer {
     font-size: 8px;
     font-family: "Montserrat";
-    display: inline-flex;
-    margin-top: 80px;
-    color: black;
-    
-    
+    margin-top: 50px;
+    color: white;
   }
-  
-  .footer2{
+
+  .footer2 {
     font-size: 8px;
     font-family: "Montserrat";
     display: inline-flex;
     margin-top: 0px;
-    color: black;
-    
-    
+    color: white;
   }
-    
+
+  img:hover {
+    box-shadow: 5px 5px 5px 0px #589f66;
+  }
+
+  .h2card {
+    font-weight: lighter;
+    margin-bottom: 20px;
+    font-family: "Sacramento";
+    font-size: 30px;
+    margin-top: 100px;
+    color: #3a4643;
+  }
+
+  .h3card {
+    font-weight: lighter;
+    font-family: "Sacramento";
+    font-size: 25px;
+    margin-top: 10px;
+    color: #3a4643;
+  }
+
+  .pcard {
+    font-family: "Montserrat";
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  .pheure{
+    font-size: 25px;
+    margin-top: 10px;
+    text-decoration: underline 1px #3a4643;
+  }
+  
+  .sheure{
+   
+    font-size: 18px;
+    font-family: Montserrat;
+    color: #589f66;
+  }
+
+  .rdv{
+    margin-bottom: 0px;
+    margin-top: 80px;
+    font-size: 25px;
+  }
+
+  .div_footer{
+    margin-top: 50px;
+    background-color: #3a4643;
+  }
 
 }
+/*RESPONSIVE*/
